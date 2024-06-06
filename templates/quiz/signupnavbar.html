@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    {%load static%}
+    <link rel="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Wuiz</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #090808;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    #navbar .logo-img {
+      width: 50px;
+      height: 50px;
+    }
+    #navbar .logout-btn {
+      background-color: #26c32e;
+      color: #f7e8e8;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo img">
+      {% load static %}
+      <img src="{% static 'images/favicon.jpg' %}">
+    </div>
+    
+    
+      <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="/aboutus">About Us</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+         
+          </div>
+          <style>
+            
+            nav{
+              width: 100vw;
+              height: 7rem;
+              background-color: #131418;
+              box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+              display: flex;
+              position: fixed;
+              z-index: 10;
+              
+           }
+           
+           /*Styling logo*/
+           .logo{
+              padding:1vh 1vw;
+              text-align: center;
+           }
+           .logo img {
+              height: 5rem;
+              width: 5rem;
+           }
+           
+           /*Styling Links*/
+           .nav-links{
+              display: flex;
+              list-style: none; 
+              width: 88vw;
+              padding: 0.6rem 0.8rem;
+              justify-content: space-evenly;
+              align-items: center;
+              text-transform: uppercase;
+           }
+           .nav-links li a{
+              text-decoration: none;
+              margin: 0 0.7vw;
+              padding: 0.6rem 0.8rem;
+           }
+           .nav-links li a:hover {
+              color: #61DAFB;
+           }
+           .nav-links li {
+              position: relative;
+           }
+           .nav-links li a:hover::before{
+              width: 80%;
+           }
+           
+           /*Styling Buttons*/
+           .login-button{
+              background-color: transparent;
+              border: 1.5px solid #f2f5f7;
+              border-radius: 2em;
+              padding: 0.6rem 0.8rem;
+              margin-left: 2vw;
+              font-size: 1rem;
+              cursor: pointer;
+           
+           }
+           .login-button:hover {
+              color: #131418;
+              background-color: #f2f5f7;
+              border:1.5px solid #f2f5f7;
+              transition: all ease-in-out 350ms;
+           }
+           .join-button{
+              color: #131418;
+              background-color: #61DAFB;
+              border: 1.5px solid #61DAFB;
+              border-radius: 2em;
+              padding: 0.6rem 0.8rem;
+              font-size: 1rem;
+              cursor: pointer;
+           }
+           .join-button:hover {
+              color: #f2f5f7;
+              background-color: transparent;
+              border:1.5px solid #f2f5f7;
+              transition: all ease-in-out 350ms;
+           }
+            </style>
+      </ul>
+  </nav>
+  <!-- Rest of the page content goes here -->
+  
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay</title>
+  {%load static%}
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  {%load static%}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {%load static%}
+  <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+  
+</head>
+<body>
+    <section>
+        <div class="container flow-content">
+          <h2 class="section-title">Our team</h2>
+          <ul role="list" class="grid">
+            <li>
+                <article class="card" data-visible="false">
+                  <div class="card__front flow-content">
+                    {%load static %}
+                    <img class="card__img mx-auto" src="{% static 'images/ajay1.jpg' %}" />
+                    <div class="flow-content" data-spacing="sm">
+                      <p class="card__name">Ajay Singh</p>
+                      <p class="card__position"></p>
+                    </div>
+                  </div>
+                  <div class="card__back flow-content">
+                    <p class="card__name">Ajay Singh</p>
+                    <q>Lorem .</q>
+                    <ul role="list" class="card__social flex-group">
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-twitter "></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/ajay-singh-470194234">
+                          <i class="fa-brands fa-linkedin "></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <footer class="card__footer">
+                    <button data-card-controller class="card__toggle">
+                      <i class="fa-solid fa-plus card__toggle-icon"></i>
+                    </button>
+                  </footer>
+                </article>
+              </li>
+            <li>
+              <article class="card" data-visible="false">
+                <div class="card__front flow-content">
+                  {%load static %}
+                  <img class="card__img mx-auto" src="{% static 'images/aniket.jpg' %}" />
+                  <div class="flow-content" data-spacing="sm">
+                    <p class="card__name">Aniket Gaikwad</p>
+                    <p class="card__position"></p>
+                  </div>
+                </div>
+                <div class="card__back flow-content">
+                  <p class="card__name">Aniket Gaikwad</p>
+                  <q>Lorem</q>
+                  <ul role="list" class="card__social flex-group">
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/aniket-gaikwad-562052220/">
+                        <i class="fa-brands fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card__footer">
+                  <button data-card-controller class="card__toggle">
+                    <i class="fa-solid fa-plus card__toggle-icon"></i>
+                  </button>
+                </footer>
+              </article>
+            </li>
+            <li>
+              <article class="card" data-visible="false">
+                <div class="card__front flow-content">
+                  {%load static %}
+                  <img class="card__img mx-auto" src="{% static 'images/adityam.jpg' %}" />
+                  <div class="flow-content" data-spacing="sm">
+                    <p class="card__name">Aditya Marathe</p>
+                    <p class="card__position"></p>
+                  </div>
+                </div>
+                <div class="card__back flow-content">
+                  <p class="card__name">Aditya Marathe</p>
+                  <q>Lorem .</q>
+                  <ul role="list" class="card__social flex-group">
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/aditya-marathe-455697238">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card__footer">
+                  <button data-card-controller class="card__toggle">
+                    <i class="fa-solid fa-plus card__toggle-icon"></i>
+                  </button>
+                </footer>
+              </article>
+            </li>
+            <li>
+              <article class="card" data-visible="false">
+                <div class="card__front flow-content">
+                  <img class="card__img mx-auto" src="{% static 'images/om.jpg' %}"/>
+                  {%load static %}
+                  <div class="flow-content" data-spacing="sm">
+                    <p class="card__name">Om Ahire</p>
+                    <p class="card__position"></p>
+                  </div>
+                </div>
+                <div class="card__back flow-content">
+                  <p class="card__name">Om Ahire</p>
+                  <q>Lorem</q>
+                  <ul role="list" class="card__social flex-group">
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/om-ahire-643b6b234/">
+                        <i class="fa-brands fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card__footer">
+                  <button data-card-controller class="card__toggle">
+                    <i class="fa-solid fa-plus card__toggle-icon"></i>
+                  </button>
+                </footer>
+              </article>
+            </li>   
+          </ul>
+        </div>
+      </section>
+  {%load static%}
+  <script src="{% static 'js/aboutus.js' %}"></script>
+</body>
+</html>

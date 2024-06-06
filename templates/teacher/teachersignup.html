@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <style>
+
+        form {
+            height: 400px;
+            margin: 40px; 
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+      
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    {% include "quiz/signupnavbar.html" %}
+ 
+
+
+<br><br><br>
+<h3 style="text-align: center;color: red;">STUDENT SIGNUP</h3>
+<form method="POST" autocomplete="off" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="username">Username</label>
+        {% render_field userForm.username|attr:'required:true'  class="form-control" placeholder="username" %}
+      </div>
+      <br>
+      <br>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        {% render_field userForm.password|attr:'required:true'  class="form-control" placeholder="password" %}
+      </div>
+      <br>
+      <br>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first_name">First Name</label>
+          {% render_field userForm.first_name|attr:'required:true'  class="form-control" placeholder="First Name" %}
+          <br>
+          <br>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last_name">Last Name</label>
+          {% render_field userForm.last_name|attr:'required:true'  class="form-control" placeholder="Last Name" %}
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="mobile">Mobile</label>
+          {% render_field teacherForm.mobile|attr:'required:true'  class="form-control" placeholder="Mobile" %}
+          <br>
+          <br>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="address">Address</label>
+          {% render_field teacherForm.address|attr:'required:true'  class="form-control" placeholder="Address" %}
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="profile_pic">Profile Picture</label>
+          {% render_field teacherForm.profile_pic|attr:'required:true' class="form-control" placeholder="" %}
+        </div>
+        <br>
+        <br>
+        
+      </div>
+      <br>
+     
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+
+
+<br><br>
+ <video autoplay loop muted>
+    {% load static %}
+    <source src="{% static 'videos/Smoking.mp4' %}" type="video/mp4">
+</video>
+{% include "quiz/footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,75 @@
+{% extends 'student/studentbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 30%;
+            height: 200px;
+            background-color: #eaeaea;
+            border: 4px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        
+        .box .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .box .name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    
+    <div class="box">
+        
+        <div class="name" style="font-size: larger;" >Total Exams Available</a></div>
+        <h2 class="text-right"><i class="fa-solid fa-book"></i><span>&nbsp;{{total_course}}</span></h2>
+    </div>
+    <div class="box">
+             
+        <div class="name" style="font-size: larger;" >Total Questions</a></div>
+        <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>&nbsp;{{total_question}}</span></h2>
+       
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

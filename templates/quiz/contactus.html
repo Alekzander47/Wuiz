@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+    .container {
+        max-width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: aliceblue;
+        border-radius: 100px;
+    }
+    body {
+        height: 100vh;
+        width: 100%;
+        background-image: url("/static/images/SDQM.jpg ");
+        background-color: #ffffff;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+</style>
+
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <div class="container" style="border: 2px solid black;">
+  <center>
+    <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+    
+
+    <form method="POST" autocomplete="off">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>
+</div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
